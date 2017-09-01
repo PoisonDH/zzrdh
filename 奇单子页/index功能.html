@@ -1,0 +1,738 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<link rel="shortcut icon" href="img/titlelogo.ico">
+<title>奇单科技</title>
+<script src="jquery.js"></script>
+<style>
+/*rest*/
+body{ margin:0;}
+img{ display:block;}
+ul,dl,h1,p{ margin:0; padding:0;}
+li,dt{list-style:none;}
+a,dd{ text-decoration:none;}
+*{ font-family:"微软雅黑"}
+input{margin:0; padding:0; border:none; outline:none;}
+.clearfix{ clear:both;}
+
+<!--————————————————————top——————————————————————————————-->
+.top_bg{background-color:#000000; border:1px red solid;}
+.top_box{max-width:1200px; width:1200px; position:absolute; top:0; left:50%; margin-left:-600px;}
+.top_box img{ float:left; margin:30px 0;}
+.nav{ float:left; margin-left:100px;}
+.nav li{ float:left; margin:40px 20px; padding:4px 10px;border:transparent 1px solid;}
+.nav li:hover{ border:white 1px solid;}
+.top_btn{ float:right; margin:40px 0;}
+.top_btn input{ width: 78px; height:28px;border-radius:2px; font-size:16px;}
+.denglu{ margin-left:20px; background-color:black; border:1px solid #FFFFFF; color:#FFFFFF; cursor:pointer;}
+.zhuce{background-color:#ec870e; border:1px solid #ec870e; color:#FFFFFF; cursor:pointer;}
+.zhuce:hover{background-color:black; border:1px solid #FFFFFF; color:#FFFFFF;}
+.denglu:hover{background-color:#ec870e; border:1px solid #ec870e; color:#FFFFFF;}
+
+.nav_scroll2 p,.nav_scroll3 p,.nav_scroll4 p{ cursor:pointer; margin:4px 0;}
+.nav_scroll2 p:hover,.nav_scroll3 p:hover,.nav_scroll4 p:hover{ color:#ec870e; text-decoration:underline;}
+
+
+<!--————————————————————iphonebox——————————————————————————————-->
+.iphone_bg{ background-color:#FFFFFF;}
+.iphone_box{ margin:0 auto;max-width:1200px; height:600px; position:relative; overflow:hidden;}
+.iphone{ position:absolute; top:110px; left:0;}
+.word,.word2,.word3,.word4,.word5,.word6
+{ position:absolute; top:80px; left:50%; margin-left:-400px; font-size:36px;}
+.word span,.word2 span,.word3 span,.word4 span,.word5 span,.word6 span
+{ color:#238066;}
+.english,.english2,.english3,.english4,.english5,.english6
+{position:absolute; top:130px; left:50%; font-size:12px;}
+.english{margin-left:-370px;}
+.heigang,.whitegang{position:absolute; top:162px; left:50%; margin-left:-50px;}
+.list{position:absolute; top:183px; left:50%; margin-left:-144px; float:left;}
+.list dd{font-size:14px; line-height:24px; cursor:pointer;}
+.yuan{position:absolute; top:194px; left:50%; margin-left:-116px; float:left;}
+
+
+<!--————————————————————diannaobox——————————————————————————————-->
+.diannao_bg{background-color:red;}
+.diannao_box{ margin:0 auto;max-width:1200px; height:584px; position:relative; overflow:hidden;}
+.diannao{ position: relative; top:115px; left:50%; margin-left:-322px; float:left;}
+.tb_pic_box{ position: relative;left:0;top:45px;max-width:1200px;}
+.tb_list1{ position:absolute; left:0;top:0;}
+.tb_list1 li{ font-size:24px;color:#333333; margin:80px 0; cursor:pointer;}
+.tb_list2 li{ font-size:24px;color:#333333; margin:60px 0; cursor:pointer;}
+.tb_pic_box span{font-size:14px;}
+.tb_pic_box li:hover{ color:#31987b;}
+.tub6_1,.tub6_1_1{ position: absolute; top:70px; right:-110px;}
+.tub6_1_1{ display:none;}
+.tub6_2,.tub6_2_2{ position: absolute; top:210px; right:-110px;}
+.tub6_2_2{display:none;}
+.tub6_3,.tub6_3_3{ position:absolute; top:350px; right:-110px;}
+.tub6_3_3{display:none;}
+.tb_list2{  position:absolute; right:0;top:0;}
+.tb_list2 a{ margin-bottom:50px;}
+.tub6_4,.tub6_4_4{ position:absolute; top:70px; left:-90px;}
+.tub6_4_4{display:none;}
+.tub6_5,.tub6_5_5{ position: absolute; top:210px; left:-90px;}
+.tub6_5_5{display:none;}
+.tub6_6,.tub6_6_6{ position:absolute; top:350px; left:-90px;}
+.tub6_6_6{display:none;}
+
+<!--————————————————————gray3_box——————————————————————————————-->
+.gray3_bg{height:600px;overflow:hidden; position:relative;}
+.gray3_pic{left:50%; position:relative; margin-left:-960px;}
+.lv_circle{position:absolute;top:72px; left:50%; margin-left:-960px;}   
+.gray3_box{ margin:0 auto;max-width:1200px; height:600px; position:relative;}
+.word6{font-size:38px; color:#FFFFFF;margin-left:-220px;}
+.english6{color:#FFFFFF;margin-left:-160px;}
+.wenzi_box{ max-width:1200px;position:absolute;top:232px; left:0;}
+.lv_list,.hui_list{ position:relative; width:580px; height:300px;}
+.lv_list{background-color:#31987b; float:left;top:0;left:0;}
+.hui_list{background-color:#616161; float:right;top:0;right:0; margin-left:40px;}
+.lv_list h1,.hui_list h1{ font-size:24px; color:white; line-height:60px; padding-left:34px; margin-bottom:28px;}
+.lv_list h1{ background-color:#238267;}
+.hui_list h1{ background-color:#484848;}
+.lv_list dd,.hui_list dd{font-size:14px; line-height:36px; color:#FFFFFF; padding-left:20px;}
+.get,.cha{position:absolute; top:100px; left:28px;}
+.lvyuan{ position:absolute;top:110px; left:50%; margin-left:-43px;}
+
+<!--————————————————————文章/问题_box——————————————————————————————-->
+.prob_bg{height:600px;overflow:hidden; position:relative;}
+.yinying{top:135px;left:50%; position:relative; margin-left:-640px;}
+.prob_box{ margin:0 auto;max-width:1200px; height:600px; position:relative;}
+.text_box{ max-width:1200px;position:absolute;top:80px; left:0;}
+.text_col,.pro_col{ position:relative; width:580px; height:300px;}
+.text_col{ float:left;top:0;left:0;}
+.pro_col{ float:right;top:0;right:0; margin-left:40px;}
+.text_col h1,.pro_col h1{ font-size:36px; line-height:30px; padding-left:20px; margin-bottom:40px; background-image:url(../%E5%A5%87%E5%8D%95/img/lv_shu.png); background-repeat:no-repeat;}
+.text_col span,.pro_col span{font-size:14px;font-weight:normal; line-height:20px;}
+.text_col dd,.pro_col dd{ margin:0;background-color:white;font-size:14px; line-height:69px; color:black; padding-left:90px; border-bottom:1px solid gray;  cursor:pointer;}
+.text_col dd:hover,.pro_col dd:hover{ color:#31987b;}
+.pen,.deng{position:absolute; top:102px; left:0px; border-right:1px solid gray; padding:20px 23px; cursor:pointer;}
+
+<!--————————————————————免费开通_box——————————————————————————————-->
+.mianfei{position:relative;}
+.bigbox{ height:400px; width:100%; position:relative; left:0; top:0;}
+.juzhongblock{ width:680px;margin:0 auto;} 
+.kuai1{ float:left; margin-right:220px;}
+.kuai1 img{ width:80px; height:80px;}
+.kuai1 li{ font-size:14px; margin-top:32px; margin-left:14px;}
+.mianfei input{ position:absolute;left:50%; margin:92px 0 125px -120px;width:250px; height:50px; background-color:#f08200; color:white; font-size:24px; border-radius:5px; cursor:pointer;}
+.mianfei input:hover{background-color:#ffffff; border:1px solid #ec870e; color:#ec870e;}
+
+<!--————————————————————底部_box——————————————————————————————-->
+.footerbox{ padding:30px 0;background-color:#2e2e2e; width:100%;}
+.dropbz,.ft_bottom of{width:1200px; height:260px; margin:0 auto;}
+.footercol1,.footercol2,.footercol3{float:left; overflow:hidden; height:260px;}
+.footercol1,.footercol2{width:30%;}
+.footercol2 li,.footercol1 p{ margin:20px 0;}
+.footercol2 a:hover{text-decoration:underline; color:#E55500;}
+.footercol3{ padding-left:20px;width:235px;}
+.footercol3 li{float:left; margin:10px 10px; cursor:pointer;}
+.footercol4{float:right;width:220px; height:260px;overflow:hidden;}
+.footercol4 li{float:left; margin:10px 10px; cursor:pointer;}
+.bdsharebuttonbox{ margin-top:15px;}
+.bdsharebuttonbox img{float:left; margin-left:20px; top:6px;}
+.fdlastli input{ margin-top:30px;}
+.fdlastli input:hover{ background-color:#6ECBFF;}
+.bdsharebuttonbox a{ cursor:pointer;}
+.even,.even2,.even3,.even4,.even5,.even6,.even7,.even8,.even9,.even10,.even11,.even12,.even13,.even14,.even15
+{position:relative;}
+.blackbox,.blackbox2,.blackbox3,.blackbox4,.blackbox5,.blackbox6,.blackbox7,.blackbox8,.blackbox2_1,.blackbox2_2,.blackbox2_3,.blackbox2_4,.blackbox2_5,.blackbox2_6,.blackbox2_7
+{ width:90px; height:32px; background-color:black; opacity:0.3; position:absolute;top:0px;}
+
+/**回到顶部按钮样式**/
+#top_btn{word-break:break-all;position:fixed;border-radius: 6px;right:0px;bottom:50px;background:white;z-index: 100; display: none;
+-moz-transition:background 1s;
+-webkit-transition:background 1s;
+-o-transition:background 1s;}
+#top_btn a {display:block;width:50px;height:50px;background-image:url(img/topicon.png);background-repeat:no-repeat;}
+#top_btn a:hover {background-image:url(img/topicon.png);}
+
+
+</style>
+</head>
+
+<body>
+<div class="banner_box" style="width:100%; background-color:black; padding-top:100px;">
+	<div >
+	<img style="margin-left:50px;"src="img/u001.png">
+	</div>
+</div>
+
+<div class="top_bg" style="background-color:black; max-width:100%;">
+    <div class="top_box">
+	<a href="../奇单/index.html"><img src="img/logo.png"></a>
+    <div class="nav">
+					<ul>
+						<li class=""><a href="../奇单/index.html" style="color:#fff;font-size:20px; ">首页</a></li>
+						<li class=""><a href="index功能.html" style="color:#fff;font-size:20px; position:relative;">功能</a>
+							<div style="width: 715px; display: none; position:absolute;top:40px;padding:50px 0 0 0; margin-left:-11px;" class="nav_scroll2 nsw">
+								<div style="display:inline-block;float:left;margin-right:10px;color:#FFFFFF;">
+									<p name="16px">外贸建站</p>
+									
+									<p>外贸营销型网站</p>
+									
+									<p style=" font-size:14px;" class="pro minpx">海外订单获取利器</p>
+
+									<p>定制开发网站</p>
+									<p style=" font-size:14px;" class="pro minpx">一对一原创设计的外贸网站</p>
+								</div>
+								<div style="display:inline-block;float:left;margin-right:10px; text-decoration:underline; color:#FFFFFF;">
+									<p name="16px">外贸营销</p>
+									
+									<p>奇单快发</p>
+									
+									
+									<p style=" font-size:14px;" class="pro minpx">自助任务式SEO优化工具</p>
+									
+									
+									<p>奇贸通</p>
+									<p style=" font-size:14px;" class="pro minpx">整合海外营销推广必备服务</p>
+								</div>
+								<div style="display:inline-block; text-decoration:underline;color:#FFFFFF;">
+									<p name="16px">外贸软件</p>
+									
+									<p>单管家</p>
+									<p style=" font-size:14px;" class="pro minpx">外贸管理软件，让业务变得更智慧</p>
+								</div>
+							</div>
+							
+						</li>
+						<li class=""><a href=" 1" style="color:#fff;font-size:20px; position:relative;">资讯</a>
+							
+							<div style="width: 222px; left:; display: none;position:absolute;top:40px;padding:50px 0 0 0; margin-left:-11px;color:#FFFFFF;" class="nav_scroll3 nsw">
+									<p name="16px">奇单资讯</p>
+									<p>外贸新闻</p>
+									<p>B2B资讯</p>
+									<p>管理软件</p>
+									<p>外贸经验</p>
+							</div>
+						</li>
+						<li><a href="javascript:;" style="color:#fff;font-size:20px; position:relative;">社区</a>
+							<div style="display:none;width:222px;left:;position:absolute;top:40px;padding:50px 0 0 0; margin-left:-11px;color:#FFFFFF;" class="nav_scroll4 nsw">
+									<p name="16px">奇单社区</p>
+									
+									<p>互动交流</p>
+									<p style=" font-size:14px;" class="pro minpx">资深行家精彩问答</p>
+									<p>外贸课堂</a></p>
+									<p style=" font-size:14px;" class="pro minpx">行业知识指导分享</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+		<script type="text/javascript">
+		   $(function(){
+				$(".nav .nsw").hide();
+				$(".nav li").hover(
+				function () {
+						$(".nav .nsw").hide();
+						$(this).addClass('on');
+						$(this).find(".nsw").slideDown(200);
+						
+				},function(){
+						$(".nav .nsw").hide();
+						$(".nav li").removeClass('on');
+				});
+			});
+		</script>
+    <div class="top_btn">
+    		<input  class="zhuce" type="button" value="免费注册">
+            <input class="denglu" type="button" value="登录"> 
+    </div>
+    <div class="clearfix"></div>
+    
+    </div>
+    
+</div>
+
+<div class="diannao_bg" style="background-color:#EEEEEE;">
+	<div class="diannao_box">
+    <div class="diannao"><img src="img/diannao.png">
+    	</div>
+            <div class="tb_pic_box">
+            <ul class="tb_list1">
+                <li class="tb1">
+                <a>互动网站<br><span>提升客户满意度</span>
+                <img  class="tub6_1" src="img/tb_6.1.png">
+                <img  class="tub6_1_1" src="img/tb_6.1_1.png">
+                </a>
+                </li>
+                <li class="tb2">
+                <a>财务可视化管理<br><span>企业现金流管理</span>
+                <img  class="tub6_2" src="img/tb_6.2.png">
+                 <img  class="tub6_2_2" src="img/tb_6.2_2.png">
+                </a></li>
+                 <li class="tb3">
+                 <a>供应链采购系统<br><span>供应链采购系统 支持支持</span>
+                <img  class="tub6_3" src="img/tb_6.3.png">
+                 <img  class="tub6_3_3" src="img/tb_6.3_3.png">
+                </a></li>
+            </ul>
+            <ul class="tb_list2">
+                <li class="tb4">
+                <a>单一窗口对接<br><span>单一窗口对接，报关退税更顺<br>畅单一窗口对接</span>
+                <img  class="tub6_4" src="img/tb_6.4.png">
+                 <img  class="tub6_4_4" src="img/tb_6.4.4.png">
+                </a></li>
+                <li class="tb5">
+                <a>业务员绩效管理<br><span>业务员绩效管理，量化数据刺<br>激业绩业务员绩效管理</span>
+                <img  class="tub6_5" src="img/tb_6.5.png">
+                 <img  class="tub6_5_5" src="img/tb_6.5_5.png">
+                </a></li>
+                <li class="tb6">
+                <a>各种工具不断进化<br><span>买家和业务更方便</span>
+                <img  class="tub6_6" src="img/tb_6.6.png">
+                 <img  class="tub6_6_6" src="img/tb_6.6_6.png">
+                </a></li>
+            </ul>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>    
+
+<div class="gray3_bg" style="overflow:hidden;">
+            <div class="gray3_box">
+                <img class="gray3_pic" src="img/gray_pic2.png">
+               
+                <div class="word6">奇单®&nbsp;专为您准备的<span>奇舰站</span></div>
+                <span class="english6">XORDER FOR YOU TO PERAPARE THE ODD SHIP STATION</span>
+                <img class="whitegang" src="img/white_gang.png">
+            
+       <div class="wenzi_box">
+       			
+            <div class="lv_list">
+            	<img class="get" src="img/get.png">
+                <dl>
+                <h1>奇舰站</h1>
+                <dd>行业个性化量身定制，提升企业形象，彰显企业实力</dd>
+                <dd>完美对接单管家，数据互通，为个性化精准营销提供大数据来源</dd>
+                <dd>运营化设计，聚焦核心卖点，有效定位和展示，精准锁定目标卖家</dd>
+                <dd>内容上精益求精，提升买家体验与粘性，获取高质量询盘证</dd>
+                <dd>企业官网与订单管理完美结合，客户订单进展一目了然，解放人工，实现自动化</dd>
+                </dl>
+             </div>
+       		 <div class="hui_list">
+            	<img class="cha" src="img/cha.png">
+                <dl>
+                <h1>其他网站</h1>
+                <dd>模板网站，风格雷同，缺乏特色</dd>
+                <dd>纯展示型网站，无数据支撑，不利于进一步推广</dd>
+                <dd>盲目追求主题的大和全，导致建站华而不实，无法留住买家</dd>
+                <dd>缺乏营销理念，纯展示型网站，很难有询盘</dd>
+                <dd>订单管理与网站脱节，全靠人工，费时费力</dd>
+                </dl>
+            </div>
+           <img class="lvyuan" src="img/lvyuan.png">
+       </div>
+       </div>
+</div>
+
+<div class="prob_bg">
+            <div class="prob_box">
+                <img class="yinying" src="img/yinying.png">
+       <div class="text_box">
+       			
+            <div class="text_col">
+            	<img class="pen" src="img/pen.png">
+                <dl>
+                <h1>相关文章<br><span>RELATED ARTICLES</span></h1>
+                <dd><a>【文章】从美国政府的出口指导手册看如何做出口电商</a></dd>
+                <dd><a>【文章】从美国政府的出口指导手册看如何做出口电商</a></dd>
+                <dd><a>【文章】从美国政府的出口指导手册看如何做出口电商</a></dd>
+                <dd><a>【文章】从美国政府的出口指导手册看如何做出口电商</a></dd>
+                </dl>
+             </div>
+       		 <div class="pro_col">
+            	<img class="deng" src="img/deng.png">
+                <dl>
+                <h1>常见问题<br><span>COMMON PROBLEM</span></h1>
+                <dd><a>【问题】源金汽配 B2B电商全新奇单模式的实践者</a></dd>
+                <dd><a>【问题】源金汽配 B2B电商全新奇单模式的实践者</a></dd>
+                <dd><a>【问题】源金汽配 B2B电商全新奇单模式的实践者</a></dd>
+                <dd><a>【问题】源金汽配 B2B电商全新奇单模式的实践者</a></dd>
+                </dl>
+            </div>
+          
+       </div>
+       </div>
+</div>
+
+<div class="mianfei">
+<div class="bigbox">
+	<div class="juzhongblock">
+	<ul class=" kuai1">
+    	<img src="img/gongju.png">
+        <li>5年打磨</li>
+    </ul>
+    <ul class=" kuai1">
+    	<img src="img/idea.png">
+        <li>30项创新</li>
+    </ul>
+    <ul class=" kuai1" style="margin-right:0">
+    	<img src="img/01.png">
+        <li>1步到位</li>
+    </ul>
+    <div class="clearfix"></div>
+    
+    </div> 
+    <input type="button" value="免费开通">
+    </div>
+</div>
+
+<div class="footerbox" style=" background-color:#2e2e2e; padding:20px 0;">
+<div class="footer" style="clear: both; color:#848383;"> 
+	<div class="ft_top of">
+		<div class="dropbz"> 
+			<div class="footercol1">
+				<p><img src="img/bot_logo.png" alt=""></p>
+				<p class="fd_first"><i class="fa fa-phone"></i>400-077-1518</p>
+				<p><i class="fa fa-envelope"></i>info@xorder.com.cn</p>
+				<div class="fx" style="height: 42px;position: relative; cursor:pointer;">
+					
+					<div class="bdsharebuttonbox">
+						<a><img style="margin-left:0;" src="img/weixin.png"></a>
+                        <a><img src="img/qq.png"></a>
+                        <a><img src="img/quuze.png"></a>
+                        <a><img src="img/douban.png"></a>
+                        <a><img src="img/ren.png"></a>
+                        
+					</div>
+				</div>
+				<div class="fa-user" style="margin-top:20px;">
+					<div style="float:left">售前<a><img style="float:left; cursor:pointer;" src="img/qq.png">QQ交谈</a></div>
+					<div style="float:left">服务<a><img style="float:left; cursor:pointer;" src="img/qq.png">QQ交谈</a></div>
+					<div style="float:left">合作<a><img style="float:left; cursor:pointer;" src="img/qq.png">QQ交谈</a></div>
+				</div>
+			</div>
+			<div class="footercol2">
+				<h5>奇单详情</h5>
+				<ul>
+					<li><p><a style="color:#848383;" href="">关于我们</a></p></li>
+					<li><p><a style="color:#848383;" href="">合作加盟</a></p></li>
+					<li><p><a style="color:#848383;" href="">联系我们</a></p></li>
+					<li class="fdlastli"><p>将信息填入下方表格，稍后会有工作人员回复您</p>
+						<form action="" method="post">
+							<input type="text" name="title" placeholder="姓名">
+							<input type="text" name="content" placeholder="电话">
+							<input style="padding:0 10px;" type="submit" value="等待回拨">
+						</form>		 
+					</li>
+
+				</ul>
+			</div>
+			<div class="footercol3">
+				<h5>资质信息</h5>
+				<ul>
+					<li class="even"><a title="可信网站" >
+                    		 <img class="ftr_c_img1" src="img/ftr_c_img1.jpg" alt="">
+                             <div class="blackbox"></div>
+                            
+                     </a></li>
+					<li class="even2"><a title="营业执照" >
+                           <img src="img/ftr_c_img2.jpg" alt="">
+                           <div class="blackbox2"></div>
+                       </a></li>
+					<li class="even3"><a title="著作权" >
+                    		<img src="img/ftr_c_img3.jpg" alt="">
+                            <div class="blackbox3"></div>
+                       </a></li>
+					<li class="even4"><a title="软件企业" >
+                    		<img src="img/ftr_c_img4.jpg" alt="">
+                            <div class="blackbox4"></div>
+                      </a></li>
+					<li class="even5"><a title="ICP证" >
+                    		<img src="img/ftr_c_img5.jpg" alt="">
+                            <div class="blackbox5"></div>
+                      </a></li>
+					<li class="even6"><a title="杭州跨进电商协会" >
+                    		<img src="img/ftr_c_img6.jpg" alt="">
+                            <div class="blackbox6"></div>
+                    </a></li>
+					<li class="even7"><a title="杭州综试区推荐单位" >
+                   			 <img src="img/ftr_c_img7.jpg" alt="">
+                             <div class="blackbox7"></div>
+                    </a></li>
+					<li class="even8"><a title="商标注册" >
+                    			<img src="img/ftr_c_img8.jpg" alt="">
+                                <div class="blackbox8"></div>
+                     </a></li>
+				</ul>
+			</div>
+			<div class="footercol4">
+				<h5>合作伙伴</h5>
+				<ul>
+					<li class="even9"><a title="中国（杭州）跨境电子商务综合试验区" >
+                   			 <img src="img/fr_img1.png" alt=""> <div class="blackbox2_1"></div>
+                    </a></li>
+					<li class="even10"><a title="IIE国际创业学院" >
+                    <img src="img/fr_img2.png" alt=""> <div class="blackbox2_2"></div>
+                    </a></li>
+					<li class="even11"><a title="杭州外贸电商协会青滕会" >
+                    <img src="img/fr_img3.png" alt=""> <div class="blackbox2_3"></div>
+                    </a></li>
+					<li class="even12"><a title="浙江泰隆商业银行" >
+                    <img src="img/fr_img4.png" alt=""> <div class="blackbox2_4"></div>
+                    </a></li>
+					<li class="even13"><a title="品众互动广告(北京)有限公司" >
+                    <img src="img/fr_img5.png" alt=""> <div class="blackbox2_5"></div>
+                    </a></li>
+					<li class="even14"><a title="天地汇" >
+                    <img src="img/fr_img6.png" alt=""> <div class="blackbox2_6"></div>
+                    </a></li>
+					<li class="even15"><a title="paypal" >
+                    <img src="img/fr_img7.png" alt=""> <div class="blackbox2_7"></div>
+                    </a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="ft_bottom of">
+		<div style=" width:450px;margin:0 auto; margin-top:40px;">
+			©2014-2016奇单 Xorder.com.cn版权所有 ICP备14030959
+		</div>
+	</div>
+	</div>
+</div>
+
+
+<div class="kfformy">
+		<div class="2weimabox" style="position:fixed; bottom:100px; right:0;">
+			
+			<div class="2weima" style="float:left; position:relative; top:10px; left:-70px; display:none;">
+				<img style="margin-left:5px;" src="img/kf_ewm.jpg" alt="">
+				<div>
+					<p style="font-size:14px;">欢迎扫描二维码</p>
+					<p style="font-size:14px;">关注奇单公众号</p>
+				</div>
+			
+			</div>
+            <div style="height:50px; width:50px; position:absolute; right:0; bottom:0;float:left; cursor:pointer; margin-bottom:5px;"><img src="img/erweima.png"></div>
+		</div>
+		
+	</div> 
+    
+<script src="img/jquery.lazyload.js"></script>
+<script type="text/javascript">
+
+ $(document).ready(function(){
+   //图片延时
+   $("img.lazy").lazyload({effect: "fadeIn"});
+   //回到顶部按钮
+   var n=0;
+   var x=0;
+   var top_btn = $("<span id='top_btn'><a title='回到顶部' href='#top'></a></span>");
+   $("body").append(top_btn);
+   $("body").attr("id","top");
+   var fe=$("#top_btn");
+   window.onscroll=function(){
+       x=(document.body.scrollTop||document.documentElement.scrollTop)+n;
+       if(x==0){fe.fadeOut().hide()}else{fe.fadeIn().show()};
+   };
+});
+<!--————————————————————————————————————————————————————-->	
+	$(".tb1").mouseenter(
+function(){
+	$(".tub6_1_1,").show(0)}
+	)
+$(".tb1").mouseleave(
+function(){
+	$(".tub6_1_1,").hide(0)}
+	)
+	
+$(".tb2").mouseenter(
+function(){
+	$(".tub6_2_2,").show(0)}
+	)
+$(".tb2").mouseleave(
+function(){
+	$(".tub6_2_2,").hide(0)}
+	)
+	
+$(".tb3").mouseenter(
+function(){
+	$(".tub6_3_3,").show(0)}
+	)
+$(".tb3").mouseleave(
+function(){
+	$(".tub6_3_3,").hide(0)}
+	)
+	
+$(".tb4").mouseenter(
+function(){
+	$(".tub6_4_4,").show(0)}
+	)
+
+$(".tb4").mouseleave(
+function(){
+	$(".tub6_4_4,").hide(0)}
+	)
+
+$(".tb5").mouseenter(
+function(){
+	$(".tub6_5_5,").show(0)}
+	)
+
+$(".tb5").mouseleave(
+function(){
+	$(".tub6_5_5,").hide(0)}
+	)
+
+$(".tb6").mouseenter(
+function(){
+	$(".tub6_6_6,").show(0)}
+	)
+
+$(".tb6").mouseleave(
+function(){
+	$(".tub6_6_6,").hide(0)}
+	)
+<!--___________________________________________________-->
+
+$(".even").mouseenter(
+function(){
+	$(".blackbox,").hide(0)}
+	)
+$(".even").mouseleave(
+function(){
+	$(".blackbox,").show(0)}
+	)
+
+$(".even2").mouseenter(
+function(){
+	$(".blackbox2,").hide(0)}
+	)
+$(".even2").mouseleave(
+function(){
+	$(".blackbox2,").show(0)}
+	)
+	
+	$(".even3").mouseenter(
+function(){
+	$(".blackbox3,").hide(0)}
+	)
+$(".even3").mouseleave(
+function(){
+	$(".blackbox3,").show(0)}
+	)
+	
+	$(".even4").mouseenter(
+function(){
+	$(".blackbox4,").hide(0)}
+	)
+$(".even4").mouseleave(
+function(){
+	$(".blackbox4,").show(0)}
+	)
+	
+	$(".even5").mouseenter(
+function(){
+	$(".blackbox5,").hide(0)}
+	)
+$(".even5").mouseleave(
+function(){
+	$(".blackbox5,").show(0)}
+	)
+	
+	$(".even6").mouseenter(
+function(){
+	$(".blackbox6,").hide(0)}
+	)
+$(".even6").mouseleave(
+function(){
+	$(".blackbox6,").show(0)}
+	)
+	
+	$(".even7").mouseenter(
+function(){
+	$(".blackbox7,").hide(0)}
+	)
+$(".even7").mouseleave(
+function(){
+	$(".blackbox7,").show(0)}
+	)
+	
+	$(".even8").mouseenter(
+function(){
+	$(".blackbox8,").hide(0)}
+	)
+$(".even8").mouseleave(
+function(){
+	$(".blackbox8,").show(0)}
+	)
+	
+	$(".even9").mouseenter(
+function(){
+	$(".blackbox2_1,").hide(0)}
+	)
+$(".even9").mouseleave(
+function(){
+	$(".blackbox2_1,").show(0)}
+	)
+	
+	$(".even10").mouseenter(
+function(){
+	$(".blackbox2_2,").hide(0)}
+	)
+$(".even10").mouseleave(
+function(){
+	$(".blackbox2_2,").show(0)}
+	)
+	
+	$(".even11").mouseenter(
+function(){
+	$(".blackbox2_3,").hide(0)}
+	)
+$(".even11").mouseleave(
+function(){
+	$(".blackbox2_3,").show(0)}
+	)
+	
+	$(".even12").mouseenter(
+function(){
+	$(".blackbox2_4,").hide(0)}
+	)
+$(".even12").mouseleave(
+function(){
+	$(".blackbox2_4,").show(0)}
+	)
+	
+	$(".even13").mouseenter(
+function(){
+	$(".blackbox2_5,").hide(0)}
+	)
+$(".even13").mouseleave(
+function(){
+	$(".blackbox2_5,").show(0)}
+	)
+	
+	$(".even14").mouseenter(
+function(){
+	$(".blackbox2_6,").hide(0)}
+	)
+$(".even14").mouseleave(
+function(){
+	$(".blackbox2_6,").show(0)}
+	)
+	
+	$(".even15").mouseenter(
+function(){
+	$(".blackbox2_7,").hide(0)}
+	)
+$(".even15").mouseleave(
+function(){
+	$(".blackbox2_7,").show(0)}
+	)
+
+	
+$(".2weimabox").mouseenter(
+function(){
+	$(".2weima,").show(0)}
+	)
+$(".2weimabox").mouseleave(
+function(){
+	$(".2weima,").hide(0)}
+	)
+		
+</script>
+</body>
+</html>

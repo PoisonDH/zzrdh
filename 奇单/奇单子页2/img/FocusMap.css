@@ -1,0 +1,87 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.clearfix:before,.clearfix:after{
+  content: " ";
+  display: table;
+}
+.clearfix:after{
+  clear: both;
+}
+.focusMap{
+  width: 1200px;/*引用时根据实际情况重新自定义*/
+  box-shadow:1px 1px 1px #aaa,
+            -1px -1px 1px #aaa;
+  margin: 5px;
+  overflow: hidden;
+  position: absolute;
+  font-family: "微软雅黑","Microsoft YaHei"
+}
+.focusMap .focusMap-ul{
+  width: 1200px;/*引用时根据实际情况重新自定义*/
+  height: 183px;
+  /*position: relative;*/
+}
+.focusMap .focusMap-ul li{
+  list-style: none;
+  width: 1200px;/*引用时根据实际情况重新自定义*/
+  position: absolute;
+ /* z-index: 0;*/
+ /* left: 400px;*/
+}
+
+.focusMap .focusMap-ul li.showPic{
+/*  z-index: 1;
+  left: 0;*/
+}
+.focusMap .pre{
+  /*display: inline-block;
+  background: url(../image/left.png) no-repeat; 
+  width: 24px;
+  height: 39px;
+  position: absolute;
+  z-index: 1;
+  top: 40%;
+  left: 10px;*/
+}
+.focusMap .next{
+  /*display: inline-block;
+  background: url(../image/right.png) no-repeat;
+  width: 24px;
+  height: 39px;
+  position: absolute;
+  z-index: 1;
+  top: 40%;
+  right: 10px;*/
+}
+.focusMap .nodis{
+  display: none;
+}
+.focusMap .page{
+  position: absolute;
+  bottom: 0;
+  /*z-index: 1;*/
+  text-align: center;
+  right: 0;
+  bottom: 2px;
+}
+.focusMap .page li{
+  display: inline-block;
+  float: left;
+  color: #aaa;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #aaa;
+  margin-right: 5px;
+  border-radius: 5px;
+}
+.focusMap .page li:hover{
+  color: #fff;
+  background: #aaa;
+  cursor: pointer;
+}
+.focusMap .page li.selectnum{
+  color: #fff;
+  background: #aaa;
+}

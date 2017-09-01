@@ -1,0 +1,740 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<link rel="shortcut icon" href="img/titlelogo.ico">
+<title>奇单科技</title>
+<script src="jquery.js"></script>
+<style>
+/*rest*/
+body{ margin:0;}
+img{ display:block;}
+ul,dl,h1,p{ margin:0; padding:0;}
+li,dt{list-style:none; cursor: pointer;}
+a,dd{ text-decoration:none;}
+*{ font-family:"微软雅黑"}
+input{margin:0; padding:0; border:none; outline:none;}
+.clearfix{ clear:both;}
+
+<!--————————————————————top——————————————————————————————-->
+.top_bg{background-color:#000000; border:1px red solid;}
+.top_box{max-width:1200px; width:1200px; position:absolute; top:0; left:50%; margin-left:-600px;}
+.top_box img{ float:left; margin:30px 0;}
+.nav{ float:left; margin-left:100px;}
+.nav li{ float:left; margin:40px 20px; padding:4px 10px;border:transparent 1px solid;}
+.nav li:hover{ border:white 1px solid;}
+.top_btn{ float:right; margin:40px 0;}
+.top_btn input{ width: 78px; height:28px;border-radius:2px; font-size:16px;}
+.denglu{ margin-left:20px; background-color:black; border:1px solid #FFFFFF; color:#FFFFFF; cursor:pointer;}
+.zhuce{background-color:#ec870e; border:1px solid #ec870e; color:#FFFFFF; cursor:pointer;}
+.zhuce:hover{background-color:black; border:1px solid #FFFFFF; color:#FFFFFF;}
+.denglu:hover{background-color:#ec870e; border:1px solid #ec870e; color:#FFFFFF;}
+
+.nav_scroll2 p,.nav_scroll3 p,.nav_scroll4 p{ cursor:pointer; margin:4px 0;}
+.nav_scroll2 p:hover,.nav_scroll3 p:hover,.nav_scroll4 p:hover{ color:#ec870e; text-decoration:underline;}
+
+<!--————————————————————————————newsnav————————————————————————————————————————————-->
+
+.list{ background-color:red;}
+.list li{ font-size:18px;border:1px solid transparent;}
+.list li:hover{ border-radius:22px;border:1px solid #008000; color:#008000;}
+
+<!--————————————————————————————newsnav————————————————————————————————————————————-->
+.lowerbox{ width:1000px;}
+.news{ padding:40px; border:2px solid transparent; border-bottom:2px solid gray;}
+.news:hover{ border:2px solid #008000; }
+.newspicture{ float:left; cursor:pointer;}
+.newscontent{ float:left; margin-left:20px; width:800px; height:148px; overflow:hidden;}
+.newstitle{ height:50px;}
+.scan{ float:right; margin-top:-20px;}
+.smallfont scannum{ float:left;}
+.pagination{ padding:20px; margin:20px 0;}
+.pagination a{ color:black; text-decoration:underline; margin:0 5px;}
+.pagination a:hover{ color:#008000;}
+.on{ text-decoration:none; border:1px solid gray;}
+/**回到顶部按钮样式**/
+#top_btn{word-break:break-all;position:fixed;border-radius: 6px;right:0px;bottom:50px;background:white;z-index: 100; display: none;
+-moz-transition:background 1s;
+-webkit-transition:background 1s;
+-o-transition:background 1s;}
+#top_btn a {display:block;width:50px;height:50px;background-image:url(img/topicon.png);background-repeat:no-repeat;}
+#top_btn a:hover {background-image:url(img/topicon.png);}
+
+<!--————————————————————底部_box——————————————————————————————-->
+.footerbox{ padding:30px 0;background-color:#2e2e2e; width:100%;}
+.dropbz,.ft_bottom of{width:1200px; height:260px; margin:0 auto;}
+.footercol1,.footercol2,.footercol3{float:left; overflow:hidden; height:260px;}
+.footercol1,.footercol2{width:30%;}
+.footercol2 li,.footercol1 p{ margin:20px 0;}
+.footercol2 a:hover{text-decoration:underline; color:#E55500;}
+.footercol3{ padding-left:20px;width:235px;}
+.footercol3 li{float:left; margin:10px 10px; cursor:pointer;}
+.footercol4{float:right;width:220px; height:260px;overflow:hidden;}
+.footercol4 li{float:left; margin:10px 10px; cursor:pointer;}
+.bdsharebuttonbox{ margin-top:15px;}
+.bdsharebuttonbox img{float:left; margin-left:20px; top:6px;}
+.fdlastli input{ margin-top:30px;}
+.fdlastli input:hover{ background-color:#6ECBFF;}
+.bdsharebuttonbox a{ cursor:pointer;}
+.even,.even2,.even3,.even4,.even5,.even6,.even7,.even8,.even9,.even10,.even11,.even12,.even13,.even14,.even15
+{position:relative;}
+.blackbox,.blackbox2,.blackbox3,.blackbox4,.blackbox5,.blackbox6,.blackbox7,.blackbox8,.blackbox2_1,.blackbox2_2,.blackbox2_3,.blackbox2_4,.blackbox2_5,.blackbox2_6,.blackbox2_7
+{ width:90px; height:32px; background-color:black; opacity:0.3; position:absolute;top:0px;}
+</style>
+</head>
+
+<body>
+<div class="banner_box" style="width:100%; background-color:black; padding-top:100px;">
+	<div >
+	<img style="margin-left:50px;"src="img/u001.png">
+	</div>
+</div>
+
+<div class="top_bg" style="background-color:black; max-width:100%;">
+    <div class="top_box">
+	<a href="../奇单/index.html"><img src="img/logo.png"></a>
+    <div class="nav">
+					<ul>
+						<li class=""><a href="../奇单/index.html" style="color:#fff;font-size:20px; ">首页</a></li>
+						<li class=""><a href="index功能.html" style="color:#fff;font-size:20px; position:relative;">功能</a>
+							<div style="width: 715px; display: none; position:absolute;top:40px;padding:50px 0 0 0; margin-left:-11px;" class="nav_scroll2 nsw">
+								<div style="display:inline-block;float:left;margin-right:10px;color:#FFFFFF;">
+									<a href=""><p name="16px">外贸建站</p></a>
+									
+									<p>外贸营销型网站</p>
+									
+									<p style=" font-size:14px;" class="pro minpx">海外订单获取利器</p>
+
+									<p>定制开发网站</p>
+									<p style=" font-size:14px;" class="pro minpx">一对一原创设计的外贸网站</p>
+								</div>
+								<div style="display:inline-block;float:left;margin-right:10px; text-decoration:underline; color:#FFFFFF;">
+									<p name="16px">外贸营销</p>
+									
+									<p>奇单快发</p>
+									
+									
+									<p style=" font-size:14px;" class="pro minpx">自助任务式SEO优化工具</p>
+									
+									
+									<p>奇贸通</p>
+									<p style=" font-size:14px;" class="pro minpx">整合海外营销推广必备服务</p>
+								</div>
+								<div style="display:inline-block; text-decoration:underline;color:#FFFFFF;">
+									<p name="16px">外贸软件</p>
+									
+									<p>单管家</p>
+									<p style=" font-size:14px;" class="pro minpx">外贸管理软件，让业务变得更智慧</p>
+								</div>
+							</div>
+							
+						</li>
+						<li class=""><a href="" style="color:#fff;font-size:20px; position:relative;">资讯</a>
+							
+							<div style="width: 222px; left:; display: none;position:absolute;top:40px;padding:50px 0 0 0; margin-left:-11px;color:#FFFFFF;" class="nav_scroll3 nsw">
+							<a href="index新闻.html" style="color: #fff;"><p name="16px">奇单资讯</p></a>
+								    <p>外贸新闻</p>
+									<p>B2B资讯</p>
+									<p>管理软件</p>
+									<p>外贸经验</p>
+							</div>
+						</li>
+						<li><a href="javascript:;" style="color:#fff;font-size:20px; position:relative;">社区</a>
+							<div style="display:none;width:222px;left:;position:absolute;top:40px;padding:50px 0 0 0; margin-left:-11px;color:#FFFFFF;" class="nav_scroll4 nsw">
+									<p name="16px">奇单社区</p>
+									
+									<p>互动交流</p>
+									<p style=" font-size:14px;" class="pro minpx">资深行家精彩问答</p>
+									<p>外贸课堂</a></p>
+									<p style=" font-size:14px;" class="pro minpx">行业知识指导分享</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+	  
+<script type="text/javascript">
+		   $(function(){
+				$(".nav .nsw").hide();
+				$(".nav li").hover(
+				function () {
+						$(".nav .nsw").hide();
+						$(this).addClass('on');
+						$(this).find(".nsw").slideDown(200);
+						
+				},function(){
+						$(".nav .nsw").hide();
+						$(".nav li").removeClass('on');
+				});
+			});
+		</script>
+    <div class="top_btn">
+    		<input  class="zhuce" type="button" value="免费注册">
+            <input class="denglu" type="button" value="登录"> 
+    </div>
+    <div class="clearfix"></div>
+    
+    </div>
+    
+</div>
+
+<div class="box">	
+ 	
+	<div class="typelist" style="width:1200px;height:60px;line-heigth:60px; margin:0 auto;">
+	<ul class="list">
+		<li style="float:left;padding:8px 20px;margin:13px 21px 13px 15px;"><a color={black}>外贸新闻</a></li>
+		<li style="float:left; padding:8px 20px;margin:13px 21px;"><a color={black}>B2B资讯</a></li>
+		<li style="float:left;padding:8px 20px;margin:13px 21px;"><a color={black}>管理软件</a></li>
+		<li style="float:left;padding:8px 20px;margin:13px 21px;"><a color={black}>外贸经验</a></li>
+		</ul>
+	</div>
+	<div class="bigbox" style="width:1200px; margin:0 auto;">
+			<div class="leftbox" style=" float:left;">
+				
+				<div class="lowerbox">
+					<div style="display:block;">
+						
+						<div class="news" onclick="">
+							<div class="newssummary">
+								<div class="newspicture"><img title="文章图片" style="width:226px;height:148px;" src="img/dlBAzZI3YKEhpsokYKnz.jpg" onerror="" alt="文章图 ">
+								</div>
+								<div class="newscontent">
+									<div class="newstitle" style="font-weight:bold;">
+										<a style="color:#333;" href="" target="_blank">外经贸服务日搭建企业与政府、金融机构沟通桥梁</a>
+									</div>
+									<div class="shortcontent" style="font-size:14px; text-overflow:ellipsis">
+
+
+
+<span style="font-family:Microsoft YaHei;font-size:14px;">2017年外经贸企业服务日将于3月16日在厦门人民会堂举行，届时将有来自政府相关部门、金融机构的工作人员为企业进行政策、产品的介绍和分析。</span>
+
+
+
+									</div>
+									<div class="inform" style="margin-top:28px;">
+										<div class="create">
+											<i class="icon icon_user img" style="width:15px;height:22px float:left;"></i>
+											<span class="smallfont" style="padding-right:2% ">
+                                            <img src="img/rentou.png" style="float:left; margin-top:6px;">厦门网</span>
+											<i class="icon icon_time img" style="width:15px;height:22px;float:left; position:relative;left:70px;top:5px;"><img src="img/time.png"></i>
+											<span class="smallfont">	
+                                           &nbsp;2017-03-14</span>
+										</div>
+										<div class="scan">
+											<i class="icon icon_eye img" style=" float:left; margin-left:-5px; margin-top:6px;"><img src="img/liulan.png"></i>
+											<span class="smallfont scannum" style="margin-left:-8px;">380</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+											<i class="icon icon_zan img" style=" float:left; position:relative; height:10px;left:42px;top:2px;"><img src="img/zan.png"></i>
+											<span class="smallfont" style="margin-left:-8px;">39</span>
+							
+										</div>
+                                        <div class="clearfix"></div>
+									</div>
+								</div>
+                                <div class="clearfix"></div>
+							</div>
+                            <div class="clearfix"></div>
+						</div>
+						
+						<div class="news" onclick="">
+							<div class="newssummary">
+								<div class="newspicture"><img title="文章图片" style="width:226px;height:148px;" src="img/DZbXtw0R5azvQINauedC.jpg" onerror="/message/index.php/picdata/news/201703/07/x7HI4cIDEfCGrm8E3Wzm.jpg" alt="文章图 ">
+								</div>
+								<div class="newscontent">
+									<div class="newstitle" style="font-weight:bold;">
+										<a style="color:#333;" href=" /news/show/id/21" target="_blank">姜增伟：促进外贸回稳向好有基础有条件</a>
+									</div>
+									<div class="shortcontent" style="font-size:14px; text-overflow:ellipsis">
+
+
+
+<span style="font-family:Microsoft YaHei;font-size:14px;">政府工作报告提出了促进外贸继续回稳向好的目标，全国政协委员、中国贸促会会长姜增伟认为，今年外贸发展环境依然复杂严峻，但实现外贸继续回稳向好还是有基础、有条件的。</span>
+
+
+									</div>
+									<div class="inform" style="margin-top:28px;">
+										<div class="create">
+											<i class="icon icon_user img" style="width:15px;height:22px float:left;"></i>
+											<span class="smallfont" style="padding-right:2%">
+                                            <img src="img/rentou.png" style="float:left; margin-top:6px;">人民网</span>
+										<i class="icon icon_time img" style="width:15px;height:22px;float:left; position:relative;left:70px;top:5px;"><img src="img/time.png"></i>
+											<span class="smallfont">	2017-03-14</span>
+										</div>
+										<div class="scan">
+											<i class="icon icon_eye img" style=" float:left; margin-left:-5px; margin-top:6px;"><img src="img/liulan.png"></i>
+											<span class="smallfont scannum" style="margin-left:-8px;">251</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+											<i class="icon icon_zan img" style=" float:left; position:relative; height:10px;left:42px;top:2px;"><img src="img/zan.png"></i>
+											<span class="smallfont" style="margin-left:-8px;">17</span>
+							
+										</div>
+                                        <div class="clearfix"></div>
+									</div>
+								</div>
+                                <div class="clearfix"></div>
+							</div>
+                            <div class="clearfix"></div>
+						</div>
+						
+						<div class="news" onclick="window.open(&#39; /news/show/id/20&#39;)">
+							<div class="newssummary">
+								<div class="newspicture"><img title="文章图片" style="width:226px;height:148px;" src="img/va5d6ZTIIt7G6rAeCqPc.jpg" onerror="/message/index.php/picdata/news/201703/07/x7HI4cIDEfCGrm8E3Wzm.jpg" alt="文章图 ">
+								</div>
+								<div class="newscontent">
+									<div class="newstitle" style="font-weight:bold;">
+										<a style="color:#333;" href=" /news/show/id/20" target="_blank">“新外贸人”在外贸新业态下的健康成长和初步探索</a>
+									</div>
+									<div class="shortcontent" style="font-size:14px; text-overflow:ellipsis">
+
+
+
+<div class="details">
+	<p>
+		<span style="font-family:Microsoft YaHei;font-size:14px;">新老外贸人之间 远非代际差异那么简单。在2014年前后,传统外贸在经过了互联网+的进程,进入了外贸2.0时代,而今,跨境贸易从信息传递阶段迈入了外贸3.0时代,这一背景下催生了新外贸人。</span><span style="font-family:Microsoft YaHei;font-size:14px;"><br></span>
+	</p>
+	
+
+
+									</div>
+									<div class="inform" style="margin-top:28px;">
+										<div class="create">
+											<i class="icon icon_user img" style="width:15px;height:22px float:left;"></i>
+											<span class="smallfont" style="padding-right:2%">
+                                            <img src="img/rentou.png" style="float:left; margin-top:6px;">三晋都市报</span>
+											<i class="icon icon_time img" style="width:15px;height:22px;float:left; position:relative;left:90px;top:5px;"><img src="img/time.png"></i>
+											<span class="smallfont">	2017-03-14</span>
+										</div>
+										<div class="scan">
+											<i class="icon icon_eye img" style=" float:left; margin-left:-5px; margin-top:6px;"><img src="img/liulan.png"></i>
+											<span class="smallfont scannum" style="margin-left:-8px; font-size:16px;">353</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+											<i class="icon icon_zan img" style=" float:left; position:relative; height:10px;left:42px;top:2px;"><img src="img/zan.png"></i>
+											<span class="smallfont" style="margin-left:-8px; font-size:16px;">14</span>
+							
+										</div>
+                                        <div class="clearfix"></div>
+									</div>
+								</div>
+                                <div class="clearfix"></div>
+							</div>
+                            <div class="clearfix"></div>
+						</div>
+                        </div>
+						
+						<div class="news" onclick=>
+							<div class="newssummary">
+								<div class="newspicture"><img title="文章图片" style="width:226px;height:148px;" src="img/pNEc53RMq2CFO8L0jUpH.jpg" onerror="/message/index.php/picdata/news/201703/07/x7HI4cIDEfCGrm8E3Wzm.jpg" alt="文章图 ">
+								</div>
+								<div class="newscontent">
+									<div class="newstitle" style="font-weight:bold;">
+										<a style="color:#333;" href=" /news/show/id/14" target="_blank">两会部长表示将继续调整外贸发展方式</a>
+									</div>
+									<div class="shortcontent" style="font-size:14px; text-overflow:ellipsis">
+
+
+
+<p class="p">
+	<span style="font-family:Calibri;font-size:12.0000pt;"><span style="font-family:Microsoft YaHei;font-size:14px;">“</span><span style="font-family:Microsoft YaHei;font-size:14px;">作为商务部部长，我感到责任重大、使命光荣</span><span style="font-family:Microsoft YaHei;font-size:14px;">”</span><span style="font-family:Microsoft YaHei;font-size:14px;">，新任商务部部长钟山首次亮相最新一期两会</span><span style="font-family:Microsoft YaHei;font-size:14px;">“</span><span style="font-family:Microsoft YaHei;font-size:14px;">部长通道</span><span style="font-family:Microsoft YaHei;font-size:14px;">”</span><span style="font-family:Microsoft YaHei;font-size:14px;">。</span></span> 
+</p>
+<p class="p">
+	<span style="font-family:Microsoft YaHei;font-size:14px;"><span style="font-family:Microsoft YaHei;font-size:14px;">　他表示，商务部将调整外贸发展方式，从量的扩张到质的提高，推动贸易强国建设。</span></span><span style="font-family:Calibri;font-size:12.0000pt;"></span> 
+</p>
+
+									<div class="inform" style="margin-top:28px;">
+										<div class="create">
+											<i class="icon icon_user img" style="width:15px;height:22px float:left;"></i>
+											<span class="smallfont" style="padding-right:2%">
+                                            <img src="img/rentou.png" style="float:left; margin-top:6px;">奇单网</span>
+											<i class="icon icon_time img" style="width:15px;height:22px;float:left; position:relative;left:62px;top:5px;"><img src="img/time.png"></i>
+											<span class="smallfont">	2017-03-14</span>
+										</div>
+										<div class="scan">
+											<i class="icon icon_eye img" style=" float:left; margin-left:-5px; margin-top:6px;"><img src="img/liulan.png"></i>
+											<span class="smallfont scannum" style="margin-left:-8px; font-size:16px;">335</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+											<i class="icon icon_zan img" style=" float:left; position:relative; height:10px;left:42px;top:2px;"><img src="img/zan.png"></i>
+											<span class="smallfont" style="margin-left:-8px; font-size:16px;">52</span>
+							
+										</div>
+                                        <div class="clearfix"></div>
+									</div>
+								</div>
+                                <div class="clearfix"></div>
+							</div>
+                            <div class="clearfix"></div>
+						</div>
+                        </div>
+					
+						
+						 <div class="clearfix"></div>
+					</div> 
+							
+							
+							<div class="pagination" style="display:block; text-align:center;">
+								<a href="" class="pagelink_a">首页</a>
+								<a href="" class="pagelink_a">上一页</a>
+								<input style="width:24px; text-align:center; border:1px solid gray;" type="text" value="1">
+								<a href="" class="pagelink_a">下一页</a>
+								<a href="" class="pagelink_a">尾页</a>
+							</div>
+                          
+				</div>
+                  <div class="clearfix"></div>
+			</div>
+			 <div class="clearfix"></div>
+	</div>
+ <div class="clearfix"></div>
+</div>
+
+
+<div class="footerbox" style=" background-color:#2e2e2e; padding:20px 0;">
+<div class="footer" style="clear: both; color:#848383;"> 
+	<div class="ft_top of">
+		<div class="dropbz"> 
+			<div class="footercol1">
+				<p><img src="img/bot_logo.png" alt=""></p>
+				<p class="fd_first"><i class="fa fa-phone"></i>400-077-1518</p>
+				<p><i class="fa fa-envelope"></i>info@xorder.com.cn</p>
+				<div class="fx" style="height: 42px;position: relative; cursor:pointer;">
+					
+					<div class="bdsharebuttonbox">
+						<a><img style="margin-left:0;" src="img/weixin.png"></a>
+                        <a><img src="img/qq.png"></a>
+                        <a><img src="img/quuze.png"></a>
+                        <a><img src="img/douban.png"></a>
+                        <a><img src="img/ren.png"></a>
+                        
+					</div>
+				</div>
+				<div class="fa-user" style="margin-top:20px;">
+					<div style="float:left">售前<a><img style="float:left; cursor:pointer;" src="img/qq.png">QQ交谈</a></div>
+					<div style="float:left">服务<a><img style="float:left; cursor:pointer;" src="img/qq.png">QQ交谈</a></div>
+					<div style="float:left">合作<a><img style="float:left; cursor:pointer;" src="img/qq.png">QQ交谈</a></div>
+				</div>
+			</div>
+			<div class="footercol2">
+				<h5>奇单详情</h5>
+				<ul>
+					<li><p><a style="color:#848383;" href="">关于我们</a></p></li>
+					<li><p><a style="color:#848383;" href="">合作加盟</a></p></li>
+					<li><p><a style="color:#848383;" href="">联系我们</a></p></li>
+					<li class="fdlastli"><p>将信息填入下方表格，稍后会有工作人员回复您</p>
+						<form action="" method="post">
+							<input type="text" name="title" placeholder="姓名">
+							<input type="text" name="content" placeholder="电话">
+							<input style="padding:0 10px;" type="submit" value="等待回拨">
+						</form>		 
+					</li>
+
+				</ul>
+			</div>
+			<div class="footercol3">
+				<h5>资质信息</h5>
+				<ul>
+					<li class="even"><a title="可信网站" >
+                    		 <img class="ftr_c_img1" src="img/ftr_c_img1.jpg" alt="">
+                             <div class="blackbox"></div>
+                            
+                     </a></li>
+					<li class="even2"><a title="营业执照" >
+                           <img src="img/ftr_c_img2.jpg" alt="">
+                           <div class="blackbox2"></div>
+                       </a></li>
+					<li class="even3"><a title="著作权" >
+                    		<img src="img/ftr_c_img3.jpg" alt="">
+                            <div class="blackbox3"></div>
+                       </a></li>
+					<li class="even4"><a title="软件企业" >
+                    		<img src="img/ftr_c_img4.jpg" alt="">
+                            <div class="blackbox4"></div>
+                      </a></li>
+					<li class="even5"><a title="ICP证" >
+                    		<img src="img/ftr_c_img5.jpg" alt="">
+                            <div class="blackbox5"></div>
+                      </a></li>
+					<li class="even6"><a title="杭州跨进电商协会" >
+                    		<img src="img/ftr_c_img6.jpg" alt="">
+                            <div class="blackbox6"></div>
+                    </a></li>
+					<li class="even7"><a title="杭州综试区推荐单位" >
+                   			 <img src="img/ftr_c_img7.jpg" alt="">
+                             <div class="blackbox7"></div>
+                    </a></li>
+					<li class="even8"><a title="商标注册" >
+                    			<img src="img/ftr_c_img8.jpg" alt="">
+                                <div class="blackbox8"></div>
+                     </a></li>
+				</ul>
+			</div>
+			<div class="footercol4">
+				<h5>合作伙伴</h5>
+				<ul>
+					<li class="even9"><a title="中国（杭州）跨境电子商务综合试验区" >
+                   			 <img src="img/fr_img1.png" alt=""> <div class="blackbox2_1"></div>
+                    </a></li>
+					<li class="even10"><a title="IIE国际创业学院" >
+                    <img src="img/fr_img2.png" alt=""> <div class="blackbox2_2"></div>
+                    </a></li>
+					<li class="even11"><a title="杭州外贸电商协会青滕会" >
+                    <img src="img/fr_img3.png" alt=""> <div class="blackbox2_3"></div>
+                    </a></li>
+					<li class="even12"><a title="浙江泰隆商业银行" >
+                    <img src="img/fr_img4.png" alt=""> <div class="blackbox2_4"></div>
+                    </a></li>
+					<li class="even13"><a title="品众互动广告(北京)有限公司" >
+                    <img src="img/fr_img5.png" alt=""> <div class="blackbox2_5"></div>
+                    </a></li>
+					<li class="even14"><a title="天地汇" >
+                    <img src="img/fr_img6.png" alt=""> <div class="blackbox2_6"></div>
+                    </a></li>
+					<li class="even15"><a title="paypal" >
+                    <img src="img/fr_img7.png" alt=""> <div class="blackbox2_7"></div>
+                    </a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="ft_bottom of">
+		<div style=" width:450px;margin:0 auto; margin-top:40px;">
+			©2014-2016奇单 Xorder.com.cn版权所有 ICP备14030959
+		</div>
+	</div>
+	</div>
+</div>
+<div class="kfformy">
+		<div class="2weimabox" style="position:fixed; bottom:100px; right:0;">
+			
+			<div class="2weima" style="float:left; position:relative; top:10px; left:-70px; display:none;">
+				<img style="margin-left:5px;" src="img/kf_ewm.jpg" alt="">
+				<div>
+					<p style="font-size:14px;">欢迎扫描二维码</p>
+					<p style="font-size:14px;">关注奇单公众号</p>
+				</div>
+			
+			</div>
+            <div style="height:50px; width:50px; position:absolute; right:0; bottom:0;float:left; cursor:pointer; margin-bottom:5px;"><img src="img/erweima.png"></div>
+		</div>
+		
+	</div> 
+    
+<script src="img/jquery.lazyload.js"></script>
+<script type="text/javascript">
+
+ $(document).ready(function(){
+   //图片延时
+   $("img.lazy").lazyload({effect: "fadeIn"});
+   //回到顶部按钮
+   var n=0;
+   var x=0;
+   var top_btn = $("<span id='top_btn'><a title='回到顶部' href='#top'></a></span>");
+   $("body").append(top_btn);
+   $("body").attr("id","top");
+   var fe=$("#top_btn");
+   window.onscroll=function(){
+       x=(document.body.scrollTop||document.documentElement.scrollTop)+n;
+       if(x==0){fe.fadeOut().hide()}else{fe.fadeIn().show()};
+   };
+});
+<!--————————————————————————————————————————————————————-->	
+	$(".tb1").mouseenter(
+function(){
+	$(".tub6_1_1,").show(0)}
+	)
+$(".tb1").mouseleave(
+function(){
+	$(".tub6_1_1,").hide(0)}
+	)
+	
+$(".tb2").mouseenter(
+function(){
+	$(".tub6_2_2,").show(0)}
+	)
+$(".tb2").mouseleave(
+function(){
+	$(".tub6_2_2,").hide(0)}
+	)
+	
+$(".tb3").mouseenter(
+function(){
+	$(".tub6_3_3,").show(0)}
+	)
+$(".tb3").mouseleave(
+function(){
+	$(".tub6_3_3,").hide(0)}
+	)
+	
+$(".tb4").mouseenter(
+function(){
+	$(".tub6_4_4,").show(0)}
+	)
+
+$(".tb4").mouseleave(
+function(){
+	$(".tub6_4_4,").hide(0)}
+	)
+
+$(".tb5").mouseenter(
+function(){
+	$(".tub6_5_5,").show(0)}
+	)
+
+$(".tb5").mouseleave(
+function(){
+	$(".tub6_5_5,").hide(0)}
+	)
+
+$(".tb6").mouseenter(
+function(){
+	$(".tub6_6_6,").show(0)}
+	)
+
+$(".tb6").mouseleave(
+function(){
+	$(".tub6_6_6,").hide(0)}
+	)
+<!--___________________________________________________-->
+
+$(".even").mouseenter(
+function(){
+	$(".blackbox,").hide(0)}
+	)
+$(".even").mouseleave(
+function(){
+	$(".blackbox,").show(0)}
+	)
+
+$(".even2").mouseenter(
+function(){
+	$(".blackbox2,").hide(0)}
+	)
+$(".even2").mouseleave(
+function(){
+	$(".blackbox2,").show(0)}
+	)
+	
+	$(".even3").mouseenter(
+function(){
+	$(".blackbox3,").hide(0)}
+	)
+$(".even3").mouseleave(
+function(){
+	$(".blackbox3,").show(0)}
+	)
+	
+	$(".even4").mouseenter(
+function(){
+	$(".blackbox4,").hide(0)}
+	)
+$(".even4").mouseleave(
+function(){
+	$(".blackbox4,").show(0)}
+	)
+	
+	$(".even5").mouseenter(
+function(){
+	$(".blackbox5,").hide(0)}
+	)
+$(".even5").mouseleave(
+function(){
+	$(".blackbox5,").show(0)}
+	)
+	
+	$(".even6").mouseenter(
+function(){
+	$(".blackbox6,").hide(0)}
+	)
+$(".even6").mouseleave(
+function(){
+	$(".blackbox6,").show(0)}
+	)
+	
+	$(".even7").mouseenter(
+function(){
+	$(".blackbox7,").hide(0)}
+	)
+$(".even7").mouseleave(
+function(){
+	$(".blackbox7,").show(0)}
+	)
+	
+	$(".even8").mouseenter(
+function(){
+	$(".blackbox8,").hide(0)}
+	)
+$(".even8").mouseleave(
+function(){
+	$(".blackbox8,").show(0)}
+	)
+	
+	$(".even9").mouseenter(
+function(){
+	$(".blackbox2_1,").hide(0)}
+	)
+$(".even9").mouseleave(
+function(){
+	$(".blackbox2_1,").show(0)}
+	)
+	
+	$(".even10").mouseenter(
+function(){
+	$(".blackbox2_2,").hide(0)}
+	)
+$(".even10").mouseleave(
+function(){
+	$(".blackbox2_2,").show(0)}
+	)
+	
+	$(".even11").mouseenter(
+function(){
+	$(".blackbox2_3,").hide(0)}
+	)
+$(".even11").mouseleave(
+function(){
+	$(".blackbox2_3,").show(0)}
+	)
+	
+	$(".even12").mouseenter(
+function(){
+	$(".blackbox2_4,").hide(0)}
+	)
+$(".even12").mouseleave(
+function(){
+	$(".blackbox2_4,").show(0)}
+	)
+	
+	$(".even13").mouseenter(
+function(){
+	$(".blackbox2_5,").hide(0)}
+	)
+$(".even13").mouseleave(
+function(){
+	$(".blackbox2_5,").show(0)}
+	)
+	
+	$(".even14").mouseenter(
+function(){
+	$(".blackbox2_6,").hide(0)}
+	)
+$(".even14").mouseleave(
+function(){
+	$(".blackbox2_6,").show(0)}
+	)
+	
+	$(".even15").mouseenter(
+function(){
+	$(".blackbox2_7,").hide(0)}
+	)
+$(".even15").mouseleave(
+function(){
+	$(".blackbox2_7,").show(0)}
+	)
+	
+$(".2weimabox").mouseenter(
+function(){
+	$(".2weima,").show(0)}
+	)
+$(".2weimabox").mouseleave(
+function(){
+	$(".2weima,").hide(0)}
+	)
+	
+</script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+.color-blacke {
+	background-color:#121214;
+}
+
+.top-social li a span {
+                width: 24px;
+                height: 24px;
+                line-height: 24px;
+                text-align: center;
+                margin: 0px;
+                background-color: transparent;
+                font-size: 13px;
+                border: 1px solid #555;
+                border-radius: 2px;
+                -moz-transition: all 0.3s;
+                -o-transition: all 0.3s;
+                -webkit-transition: all 0.3s;
+                transition: all 0.3s;
+            }
+
+.top-bar a span {
+            margin-right: 5px;
+        }
+
+.top-social li a span:hover {
+                    color: #fff;
+                    background-color: #252525;
+                    border-color: #252525;
+                }
+
+.social-1 li a span {
+            width: 32px;
+            height: 32px;
+            line-height: 32px;
+            text-align: center;
+            color: #fff;
+            font-size: 16px;
+            -webkit-border-radius: 2px;
+            -moz-border-radius: 2px;
+            -ms-border-radius: 2px;
+            border-radius: 2px;
+            -moz-transition: all 200ms ease-in;
+            -o-transition: all 200ms ease-in;
+            -webkit-transition: all 200ms ease-in;
+            transition: all 200ms ease-in;
+        }
+
+.social-1 li a span:hover {
+                opacity: 0.8;
+            }
+
+.social-1 li a span.fa-qq {
+                background-color: #12b7f5;
+            }
+
+            .social-1 li a span.fa-wechat {
+                background-color: #3caf36;
+            }
+
+            .social-1 li a span.fa-weibo {
+                background-color: #e6162d;
+            }
+
+            .social-1 li a span.fa-envelope {
+                background-color: #3b5998;
+            }
+
+            .social-1 li a span.fa-dribbble {
+                background-color: #ea4c89;
+            }
+
+.no-bottom {
+	margin-bottom: 0px;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #fff;
+
+}
+
+.navbar-default .navbar-nav>.active>a,.navbar-default .navbar-nav>.active>a:focus,.navbar-default .navbar-nav>.active>a:hover{color:#fff;background-color:#121214;}
+
+.special-feature .s-feature-box {
+  overflow: hidden;
+  position: relative;
+  height: 300px;
+  margin-bottom: 20px;
+  cursor: auto; }
+
+.services-table-cell {
+  overflow: hidden;
+  position: relative;
+  height: 300px;
+  margin-bottom: 20px;
+  cursor: auto; }
+
+.services-table-cell .icon {
+	cursor: auto;
+}
+.sf_5cols_1in_20 {
+	    margin-left:12px;
+}
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover {
+background-color:#fff;
+}

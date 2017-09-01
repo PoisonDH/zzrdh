@@ -1,0 +1,51 @@
+.full_screen_custom{background-repeat: no-repeat;background-size: cover;background-position: center;}
+body{min-width: 1300px;}
+header{min-width: 1300px;height:88px;width:100%;background: #fafafa;box-shadow: 0px 3px 50px -20px #000;position: fixed;z-index: 100;top:0;transition:  0.3s;
+    -webkit-transition:  0.3s;
+    -moz-transition:  0.3s;
+    -ms-transition:  0.3s;
+    -o-transition:  0.3s;}
+header .logo{float: left;margin-top: 25px;margin-left: 25px;height: 45%}
+header nav{width:848px;margin:0 auto;}
+header nav ul{border-right: 1px solid #e5e8f1;height:100%;}
+header nav li{width:120px;border-left: 1px solid #e5e8f1;height:88px;position: relative;z-index: 100;transition:  0.3s;
+    -webkit-transition:  0.3s;
+    -moz-transition:  0.3s;
+    -ms-transition:  0.3s;
+    -o-transition:  0.3s;}
+header nav li a{float: left;height:88px;line-height: 88px;width:100%;font-size: 14px;text-align: center;cursor:pointer;color:#262628;transition:  0.3s;
+    -webkit-transition:  0.3s;
+    -moz-transition:  0.3s;
+    -ms-transition:  0.3s;
+    -o-transition:  0.3s;}
+header nav li a:hover{background-color: #2553b3;color:#fff;}
+header nav li .selected{background: #2553b3;color:#fff;}
+header nav .home a:hover{line-height: 120px;padding-top: 20px;background-image:url(../images/home_icon.png);background-repeat: no-repeat;background-position:center 20px;}
+header nav .home .selected{line-height: 120px;padding-top: 20px;background-image:url(../images/home_icon.png);background-repeat: no-repeat;background-position:center 20px;}
+
+header form{width:200px;height:20px;line-height: 20px;border:1px solid #d3d7eb;border-radius: 30px;float:right;padding:5px 0;margin-top: 28px;margin-right: 20px;transition:  0.3s;
+    -webkit-transition:  0.3s;
+    -moz-transition:  0.3s;
+    -ms-transition:  0.3s;
+    -o-transition:  0.3s;}
+header form input{border:none;background: none;float: left;height:20px;}
+header form input[type="search"]{width:140px;padding:0px 10px;}
+header form input[type="submit"]{width:40px;height:20px;background: url(../images/search_icon.png) no-repeat 10px center;border-left: 1px solid #d3d7eb;}
+.scroll_header{height:68px;}
+.scroll_header nav li{height:68px;}
+.scroll_header nav li a{height:68px;line-height: 68px;}
+.scroll_header form{margin-top: 16px}
+.scroll_header nav .home a:hover{line-height: 90px;background-position:center 15px;}
+.scroll_header nav .home .selected{line-height: 90px;background-position:center 15px;}
+
+ 
+h1{ margin-top:100px;}
+.xinxi_xitong{ width:700px;} 
+.xinxi_xitong img{ width:550px; height:400px; margin:0 auto; margin-top:50px; margin-left:60px;}
+
+
+
+
+
+
+

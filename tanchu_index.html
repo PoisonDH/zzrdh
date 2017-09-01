@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>弹出层垂直居中</title>
+<style>
+*{ margin:0; padding:0; list-style:none;}
+img{ border:0;}
+	h1{font-size: 24px;list-style: none;}
+.word{ font-family: "微软雅黑"; font-size:100px;text-align: center;width: 400px;height: 400px; margin:100px auto; cursor:pointer;}
+
+.zzsc {position: fixed;left: -100%;right:100%;top:0;bottom: 0;text-align: center;font-size:20px; z-index:9999; display:none;}
+.zzsc:after {content:"";display: inline-block;vertical-align: middle;height: 100%;width: 0;}
+.word_show{text-align: center;position: absolute;top:20px;left: 50%;margin-left: -240px; width: 480px;height:100%;}
+.content{display: inline-block; *display: inline; *zoom:1;	vertical-align: middle;position: relative;right: -100%;}
+.content_mark{ width:100%; height:100%; position:fixed; left:0; top:0; z-index:555; background:#000; opacity:0.5;filter:alpha(opacity=50); display:none;}
+</style>
+</head>
+<body>
+<div class="word">
+最新要闻
+</div>
+
+<!-- 弹出层部分begin -->
+<div class="zzsc">
+ 
+  <div class="content">
+  <img src="img/zzsc.jpg" />
+  <div class="word_show">
+  <h1>智慧助力全域旅游&nbsp;&nbsp;
+
+智慧旅游解决方案</h1>
+
+<p>信息服务集成化<br>
+市场营销精准化<br>
+产业运行数据化<br>
+行业管理智能化<br>
+旅游“云、网、端”基础设施完善，信息新技术的行业创新应用不断深化，旅游数字化、网络化、智能化取得明显进展，旅游公共信息服务水平显著提高，旅游在线营销能力全面发展，行业监管能力进一步增强，旅游电子政务支撑行业治理现代化坚实有力，信息化引领旅游业转型升级取得明显成效。<br>
+为政府打造“多级一体”的智慧管理体系<br>
+为企业提供“多维度全方位”的营销矩阵<br>
+为游客打造“以人为本”的智慧旅游体验</p></div></div>
+</div>
+<div class="content_mark"></div>
+<!-- 弹出层部分end -->
+
+<script src="js/jquery.min.js"></script>
+<script>
+$(function(){
+	$('.word').click(function(){
+		$('.zzsc').show(0);
+		$('.content_mark').show(0);
+	});
+	$('.content_mark').click(function(){
+		$('.zzsc').hide(0);
+		$('.content_mark').hide(0);
+	});
+});
+</script>
+<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+</div>
+</body>
+</html>
