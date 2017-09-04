@@ -147,7 +147,7 @@
 			
 			if(nowImage < size){
 				nowImage += 1;
-			}else {、
+			}else {
 				nowImage = 0;
 			}
 		}else {
