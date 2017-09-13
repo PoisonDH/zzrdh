@@ -74,6 +74,7 @@ form:hover{box-shadow: 1px 1px 10px 0px rgb( 38, 75, 153 );}
 .qq span:after { content: ""; display: block; width: 0; height: 0; border-bottom: 4px solid; border-right: 4px solid transparent; border-left: 5px solid transparent; position: absolute; top: -3px; left: 52%; z-index: 21111; color: #fff; }
 
 
+
 /*滚动导航栏变窄*/
 .scroll_header{height:68px;transition:0.3s;
     -webkit-transition: 0.3s;
@@ -215,11 +216,13 @@ h3 {
   margin:25px 0;
 }
 h4 {
-  font-size: 48px;
-  line-height: 50px;
+  font-size:30px;
+  line-height:50px;
 	width: 100%;
 	text-align: center;
   margin: 80px 0;
+  letter-spacing: 2px;
+  font-weight:bold;
 }
 h5 {
   font-size: 18px;
@@ -456,7 +459,7 @@ p {font-size: 14px;
   transition: all 0.3s ease;
 }
 .magnifier:hover {
-  opacity: 0.7;
+  opacity: 0.7; 
 }
 .magnifier:after {
   content: '';

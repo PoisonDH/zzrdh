@@ -22,7 +22,7 @@
 <script src="js/my.js"></script>
 <script src="js/jquery.SuperSlide.2.1.1.js"></script>
 	<script type="text/javascript">if($(window).width()>1024){document.write("<"+"script src='js4/jquery.preloader.js'></"+"script>");}	</script>
-	<script>		
+	<script>
 		 jQuery(window).load(function() {	
 		 $x = $(window).width();		
 	if($x > 1024)
@@ -30,9 +30,7 @@
 	 jQuery('.magnifier').touchTouch();
 		 jQuery('.spinner').animate({'opacity':0},1000,'easeOutCubic',function (){jQuery(this).css('display','none')});	
   		  }); 
-					
 	</script>
-  
 	  <script type="text/javascript">
            var _gaq = _gaq || [];
           _gaq.push(['_setAccount', 'UA-29231762-1']);
@@ -190,7 +188,7 @@
     <ul class="clearfix">
     <li><a href="index.html">网站首页</a></li>
     <li><a href="gongsijianjie.html">企业概况</a></li>
-    <li><a href="dongtai.html">新闻动态</a></li>           
+    <li><a href="dongtai.html">新闻动态</a></li>
     <li><a href="hexinjingzhengli.html">研发中心</a></li>
     <li><a href="ruanjianzhinnegjiejuefangan.html">解决方案</a></li>
     <li><a href="zhongdianhangyejiejuefangan.html">工程案例</a></li>
@@ -233,7 +231,7 @@ $(document).ready(function(){
    $("img.lazy").lazyload({effect: "fadeIn"});
    //回到顶部按钮
    var n=0;
-   var x=0;
+   var x=0;  
    var top_btn = $("<span id='top_btn'><a title='回到顶部' href='#top'></a></span>");
    $("body").append(top_btn);
    $("body").attr("id","top");
@@ -241,7 +239,7 @@ $(document).ready(function(){
    window.onscroll=function(){
        x=(document.body.scrollTop||document.documentElement.scrollTop)+n;
        if(x==0){fe.fadeOut().hide()}else{fe.fadeIn().show()};
-   };
+   }; 
 });
 </script>
 </body>
