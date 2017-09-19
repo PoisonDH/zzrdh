@@ -184,7 +184,7 @@ form:hover{box-shadow: 1px 1px 10px 0px rgb( 38, 75, 153 );}
 .core{width:100%; height:204px; color:#333333; font-size:24px; line-height:204px; text-align:center; background-color:#eaeaea;}
 .core_box{width:100%; height:100%; background-color:#eaeaea;}
 .first_core{ height:542px; margin-bottom:20px;}
-.core_pic1{ float:right;}
+.core_pic1{ float:right;} 
 .core_text{ width:360px; height:264px; background-color:#2f2f2f; margin:0 auto; margin-top:98px;}
 .core_intro{width:544px;  height:100%; color:#fff; float:left; background-color:#2f2f2f;}
 .small_line{ width:10px; height:2px; background-color:#9a9a9a; float:left; margin-bottom:40px;}
@@ -215,7 +215,7 @@ form:hover{box-shadow: 1px 1px 10px 0px rgb( 38, 75, 153 );}
 
 
 
-
+ 
 
 
 /* dongtai css */
@@ -259,8 +259,8 @@ line-height:56px; text-align:center; color:#333333; font-size:24px; cursor: poin
 .jiantou{ float:right; margin-top:20px; margin-right:16px; margin-top:22px;}
 .join_kuang{ float:left;}
 .join_kuang2{ float:left;}
-/* partner*/
-.partner{ font-size:40px; color:#333333; margin:0 auto; text-align:center; margin-top:64px; margin-bottom:46px;}
+/   * partner*/
+.par  tner{ font-size:40px; color:#333333; margin:0 auto; text-align:center; margin-top:64px; margin-bottom:46px;}
 .co_logo{ margin:0 auto; width:1620px; margin-bottom:100px;}
 .co_logo li{ width:322px; height:150px; border:#ebebeb 1px solid; float:left;}
 .co_logo img{ position:relative; top:30%; left:15%;}
@@ -341,11 +341,11 @@ h3 { font-size: 1.8em; }
 .inside h2 a:hover{ color:#09F; border-right:3px solid #09F; padding-right:20px;}
 .inside{position:fixed;}
 aside { float: left; max-width: 1200px;}												
-.inside { padding: 10px; width:180px; text-align:right;}
-#sidebar.sticky { float: none; position: fixed; top: 20px; z-index: 6; left: auto; }
+.inside { padding: 10px; width:180px; text-align:right;} 
+#sidebar.sticky { float: none; position: fixed; top: 20px; z-index: 6; left: auto;background-color: blue;opacity: 0.8;}
 
 /* main content */
-.main_content { float: right; max-width:1700px;}
+.main_content { float: right; max-width:1700px;background-color:#264b99;}
 
 
 .xinxi_xitong{ width:700px;} 
@@ -362,18 +362,17 @@ aside { float: left; max-width: 1200px;}
 
 
 /* footer css*/ 
-.footer{ width:100%; background:#313131; font-size:12px; color:#989898;margin-top: 20px;}
+.footer{ width:100%; background:#313131; font-size:12px; c1olor:#989898;margin-top: 20px;}
 .footer a{color:#989898;}
 .footer_text{ width:399px; height:20px; background:url(../img/footer_text.png) no-repeat center center; padding:30px 0; margin:0 auto;}
-.footer_logo{ width:800px; background:url(../img/footer_logo.png) no-repeat 0 center; padding-left:250px; 
 height:74px; position:relative; left: 50%;margin-left: -525px;}
+height:74px; position:relative; left: 50%;margin-left: -525px;}
+height:74px; position:relative; left: 50%;margin-left: -525px;}
+.footer_logo{ width:800px; background:url(../img/
+height 74px; position:relative; left: 50%;margin-left: -525px;}
 .footer_logo:after{ content:url(../img/ewm.png); display:block; position:absolute; right:0; top:-5px;}
 .footer_logo ul li{ float:left; width:70px; text-align:center; border-right:1px solid #989898; height:12px; line-height:12px; overflow:hidden;}
 .footer_logo ul li:last-child{ border-right:none;}
 .footer_logo p{ margin:10px 0 0 11px; line-height:28px;}
-.footer_logo p span{ margin-right:20px;}
+c.footer_logo p span{ margin-right:20px;}
 .footer .icp{ line-height:80px; height:80px; text-align:center;}
-
-
-
-
