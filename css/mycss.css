@@ -362,17 +362,14 @@ aside { float: left; max-width: 1200px;}
 
 
 /* footer css*/ 
-.footer{ width:100%; background:#313131; font-size:12px; c1olor:#989898;margin-top: 20px;}
+.footer{ width:100%; background:#313131; font-size:12px; color:#989898;margin-top: 20px;}
 .footer a{color:#989898;}
 .footer_text{ width:399px; height:20px; background:url(../img/footer_text.png) no-repeat center center; padding:30px 0; margin:0 auto;}
+.footer_logo{ width:800px; background:url(../img/footer_logo.png) no-repeat 0 center; padding-left:250px; 
 height:74px; position:relative; left: 50%;margin-left: -525px;}
-height:74px; position:relative; left: 50%;margin-left: -525px;}
-height:74px; position:relative; left: 50%;margin-left: -525px;}
-.footer_logo{ width:800px; background:url(../img/
-height 74px; position:relative; left: 50%;margin-left: -525px;}
 .footer_logo:after{ content:url(../img/ewm.png); display:block; position:absolute; right:0; top:-5px;}
 .footer_logo ul li{ float:left; width:70px; text-align:center; border-right:1px solid #989898; height:12px; line-height:12px; overflow:hidden;}
 .footer_logo ul li:last-child{ border-right:none;}
 .footer_logo p{ margin:10px 0 0 11px; line-height:28px;}
-c.footer_logo p span{ margin-right:20px;}
+.footer_logo p span{ margin-right:20px;}
 .footer .icp{ line-height:80px; height:80px; text-align:center;}
