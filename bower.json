@@ -1,0 +1,24 @@
+{
+  "name": "zzrdh",
+  "homepage": "https://github.com/PoisonDH/zzrdh",
+  "authors": [
+    "PoisonDH <m15638210520@163.com>"
+  ],
+  "description": "zzrdh",
+  "main": "",
+  "keywords": [
+    "zzrdh"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^2.2.4"
+  }
+}
